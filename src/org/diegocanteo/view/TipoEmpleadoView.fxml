@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="644.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.TipoEmpleadoController">
+   <children>
+      <TableView fx:id="tblEmpleados" layoutX="15.0" layoutY="145.0" onMouseClicked="#seleccionarElemento" prefHeight="260.0" prefWidth="616.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTipoEmpleado" prefWidth="70.0" text="Codigo " />
+          <TableColumn fx:id="colDescripcion" prefWidth="621.0" text="Descripcion" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <AnchorPane layoutY="-3.0" prefHeight="47.0" prefWidth="644.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label layoutX="243.0" layoutY="12.0" text="Tipo Empleado " textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="598.0" layoutY="6.0" onMouseClicked="#ventanaEmpleado" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Empleados.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtDescripcion" layoutX="192.0" layoutY="101.0" prefHeight="30.0" prefWidth="272.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <Label layoutX="20.0" layoutY="66.0" text="CodigoTipoEmpleado">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCodigoTipoEmpleado" layoutX="192.0" layoutY="64.0" prefHeight="30.0" prefWidth="113.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <Label layoutX="20.0" layoutY="103.0" text="Descripcion">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="49.0" layoutX="14.0" layoutY="9.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Retroceso.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="btnNuevo" layoutX="30.0" layoutY="415.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="183.0" layoutY="416.0" mnemonicParsing="false" onAction="#editar" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Editar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="367.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Reportar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="543.0" layoutY="416.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

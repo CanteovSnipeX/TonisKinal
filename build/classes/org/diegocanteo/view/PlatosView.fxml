@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="668.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.PlatosController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="51.0" prefWidth="674.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="8.0" layoutY="6.0" onMouseClicked="#ventanaTipoPlato" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="284.0" layoutY="8.0" text="Platos " textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="65.0" layoutX="64.0" layoutY="4.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/MenuPricipal.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="611.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Icono.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="32.0" layoutY="80.0" text="CodigoPlato">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="33.0" layoutY="116.0" text="Cantidad">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="29.0" layoutY="149.0" text="NombrePlato">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="316.0" layoutY="80.0" prefHeight="17.0" prefWidth="107.0" text="DescripcionPlato">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="317.0" layoutY="116.0" prefHeight="17.0" prefWidth="78.0" text="PrecioPlato">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="319.0" layoutY="149.0" prefHeight="17.0" prefWidth="107.0" text="CodigoTipoPlatos">
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <TableView fx:id="tblPlatos" layoutX="8.0" layoutY="191.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="164.0" prefWidth="652.0">
+        <columns>
+          <TableColumn fx:id="colCodigoPlato" prefWidth="55.0" text="Codigo" />
+          <TableColumn fx:id="colCantidad" prefWidth="65.0" text="Cantidad" />
+            <TableColumn fx:id="colNombrePlato" prefWidth="125.0" text="NombrePlato" />
+            <TableColumn fx:id="colDescripcionPlato" prefWidth="142.0" text="DescripcionPlato" />
+            <TableColumn fx:id="colPrecioPlato" prefWidth="135.0" text="PrecioPlato" />
+            <TableColumn fx:id="colCodigoTipoPlatos" prefWidth="129.0" text="CodigoTipoPlato" />
+            <TableColumn fx:id="colNombrePlato" prefWidth="125.0" text="NombrePlato" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <TextField fx:id="txtCantidad" layoutX="134.0" layoutY="112.0" prefHeight="25.0" prefWidth="149.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="txtCodigoPlato" layoutX="134.0" layoutY="76.0" prefHeight="25.0" prefWidth="149.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="txtNombrePlato" layoutX="134.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="txtDescripcion" layoutX="441.0" layoutY="76.0" prefHeight="25.0" prefWidth="178.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtPrecio" layoutX="441.0" layoutY="112.0" prefHeight="25.0" prefWidth="178.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <ComboBox fx:id="cmbCodigotipoPlato" layoutX="441.0" layoutY="150.0" prefHeight="25.0" prefWidth="178.0">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+      <Button fx:id="btnNuevo" layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="198.0" layoutY="363.0" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #08CAD3;" text="Editar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="399.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #08CAD3;" text="Reportar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="569.0" layoutY="363.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

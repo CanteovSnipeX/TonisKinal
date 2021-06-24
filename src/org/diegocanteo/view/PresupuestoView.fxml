@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="436.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.PresupuestoController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="53.0" prefWidth="442.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="44.0" layoutX="6.0" layoutY="2.0" onMouseClicked="#ventanaEmpresa" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="61.0" layoutY="5.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/MenuPricipal.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="65.0" layoutX="377.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Icono.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="183.0" layoutY="17.0" text="Presupuesto" textFill="#f5f5f5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblPresupuestos" layoutX="7.0" layoutY="245.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="181.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="colCodigoPresupuesto" prefWidth="57.0" text="Codigo " />
+          <TableColumn fx:id="colFechaSolicitud" prefWidth="114.0" text="Fecha" />
+            <TableColumn fx:id="colCantidadPresupuesto" prefWidth="144.0" text="Cantidad" />
+            <TableColumn fx:id="colCodigoEmpresa" prefWidth="100.0" text="CodigoEmpresa" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCodigoPresupuesto" layoutX="210.0" layoutY="69.0" prefHeight="30.0" prefWidth="44.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtCantidadPresupuesto" editable="false" layoutX="210.0" layoutY="150.0" prefHeight="30.0" prefWidth="156.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="29.0" layoutY="74.0" text="CodigoPresupuesto">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="29.0" layoutY="115.0" text="Fecha Solicitud">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="29.0" layoutY="155.0" text="Cantidad Presupuesto ">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <Label layoutX="29.0" layoutY="201.0" text="CodigoEmpresa">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Label>
+      <GridPane fx:id="grpFechaSolicitud" layoutX="205.0" layoutY="117.0" prefHeight="30.0" prefWidth="167.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ComboBox fx:id="cmbCodigoEmpresa" layoutX="210.0" layoutY="196.0" prefHeight="30.0" prefWidth="156.0">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+      <Button fx:id="btnNuevo" layoutX="22.0" layoutY="440.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="133.0" layoutY="440.0" mnemonicParsing="false" onAction="#editar" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Editar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="239.0" layoutY="440.0" mnemonicParsing="false" onAction="#generarRepoter" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Reporte">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="343.0" layoutY="441.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

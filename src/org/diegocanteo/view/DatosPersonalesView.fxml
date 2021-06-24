@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="557.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.DatosPersonalesController">
+   <children>
+      <Accordion layoutX="14.0" layoutY="14.0" />
+      <AnchorPane layoutY="-2.0" prefHeight="376.0" prefWidth="214.0" style="-fx-background-color: #4A413D;">
+         <children>
+            <Button fx:id="btnDatos" layoutX="24.0" layoutY="249.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #08CAD3;" text="Programador ">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="A" layoutX="24.0" layoutY="313.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: #08CAD3;" text="Administrador ">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <ImageView fitHeight="45.0" fitWidth="57.0" layoutX="2.0" layoutY="6.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="103.0" fitWidth="149.0" layoutX="38.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Icono.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="327.0" prefHeight="42.0" prefWidth="149.0" text="DATOS" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <AnchorPane layoutX="231.0" layoutY="50.0" prefHeight="308.0" prefWidth="301.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="21.0" layoutY="20.0" prefHeight="20.0" prefWidth="186.0" text="Diego Andres ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="50.0" prefHeight="20.0" prefWidth="186.0" text="Canteo Martinez ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="80.0" prefHeight="20.0" prefWidth="186.0" text="2016-532">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="110.0" prefHeight="30.0" prefWidth="137.0" text="PE5AM">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="146.0" layoutY="142.0" prefHeight="151.0" prefWidth="123.0">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="107.0" layoutX="18.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Pragramador.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

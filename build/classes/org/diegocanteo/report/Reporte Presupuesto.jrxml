@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reporte Presupuesto" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f1a3b5ba-ee43-449a-a071-07d58583dfa1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call  sp_listarPresupuesto]]>
+	</queryString>
+	<field name="codigoPresupuesto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaSolicitud" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidadPresupuesto" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="572" height="79" uuid="c5ca2ebf-3e2e-4256-91f0-fad1cbad06cf"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Barra Naranja.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="81" height="68" uuid="81d5201b-1210-45ab-a1d8-13645521174a"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Icono.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="71" y="20" width="118" height="38" forecolor="#FFFFFF" uuid="a2fe4864-0183-420a-874d-75460e4fd405"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tonys Kinal]]></text>
+			</staticText>
+			<image>
+				<reportElement x="497" y="10" width="64" height="58" uuid="68da660a-797d-426b-b110-fcf6af603503"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\IconoGorro.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="189" y="0" width="200" height="35" uuid="6f2ed7b2-90e1-47c4-85be-5177b2bf5b4e"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Presupeuesto]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="41" width="572" height="1" uuid="3b8ce6fa-941f-4fe5-b038-283f1d83cbeb"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted" lineColor="#00FFFF"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="10">
+				<reportElement x="22" y="4" width="118" height="20" uuid="c77becea-747b-4c3f-9a93-c5139fb4e040"/>
+				<graphicElement>
+					<pen lineColor="#00FFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="158" y="4" width="118" height="20" uuid="7e096d10-f563-4616-b847-a8ac0388efae"/>
+				<graphicElement>
+					<pen lineColor="#FF6600"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="307" y="4" width="118" height="20" isPrintWhenDetailOverflows="true" uuid="6ce2278d-054c-471a-ace5-a24529e08181"/>
+				<graphicElement>
+					<pen lineColor="#00FFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="443" y="4" width="118" height="20" uuid="ae2d7285-8ff5-4800-a779-43b3e3fc88f4"/>
+				<graphicElement>
+					<pen lineColor="#FF6600"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="4" width="118" height="20" uuid="9e63cb69-9e2b-4c4f-85ed-1ea9143151e9"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="4" width="118" height="20" uuid="3ba7f849-594a-43ae-b44d-162448ad06da"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Fecha Solicitud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="4" width="118" height="20" uuid="27f26fc3-63f4-4cbf-a4dd-4906a3fc5d84"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Cantidad ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="4" width="118" height="20" uuid="3321ca7d-c22e-4e54-aa01-9f61c19d15fe"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Codigo Empresa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="158" y="0" width="117" height="20" uuid="bf8b6467-336d-45b6-9d29-2c8dc9ac2731"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fechaSolicitud}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="118" height="20" uuid="c177287a-aef0-4b45-b74f-d85ebedd37fa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cantidadPresupuesto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="0" width="118" height="20" uuid="63e0d9fe-9e59-4c42-809f-a1a81d3bac82"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="31" width="572" height="1" uuid="9969c486-e3d5-4069-88a2-9751c080357a"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted" lineColor="#00FFFF"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="22" y="0" width="118" height="20" uuid="a162fa3c-2111-4bd5-b781-ec9ddc73e1f4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoPresupuesto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="16" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="34" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="34" uuid="4d987f89-b371-4f4d-af08-346deb5d6130"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#000000"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</pageFooter>
+</jasperReport>

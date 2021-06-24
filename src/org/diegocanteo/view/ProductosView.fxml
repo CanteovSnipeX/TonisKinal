@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="600.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.ProductosController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="-2.0" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label layoutX="245.0" layoutY="10.0" text="Productos " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="48.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="48.0" layoutX="552.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Icono.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblProductos" layoutX="8.0" layoutY="163.0" onMouseClicked="#seleccionarElemento" prefHeight="164.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="colCodigoProducto" prefWidth="63.0" text="Codigo" />
+          <TableColumn fx:id="colNombreProducto" prefWidth="426.0" text="Nombre Producto" />
+            <TableColumn fx:id="colCantidad" prefWidth="95.0" text="Cantidad" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <TextField fx:id="txtCodigoProducto" layoutX="160.0" layoutY="53.0" prefHeight="25.0" prefWidth="124.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtNombreProducto" layoutX="159.0" layoutY="90.0" prefHeight="25.0" prefWidth="227.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="21.0" layoutY="55.0" text="CodigoProducto">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="92.0" text="NombreProducto">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtCantidad" layoutX="160.0" layoutY="123.0" prefHeight="25.0" prefWidth="124.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="20.0" layoutY="125.0" text="Cantidad">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnNuevo" layoutX="46.0" layoutY="341.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="195.0" layoutY="340.0" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #08CAD3;" text="Editar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReportar" layoutX="350.0" layoutY="341.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #08CAD3;" text="Reportar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="477.0" layoutY="340.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

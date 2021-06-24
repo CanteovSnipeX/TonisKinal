@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="600.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.TipoPlatocontroller">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="7.0" layoutY="4.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="558.0" layoutY="6.0" onMouseClicked="#ventanaPlatos" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Platos.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="269.0" layoutY="12.0" text="Tipo Plato" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbltipoPlatos" layoutX="12.0" layoutY="146.0" onMouseClicked="#seleccinarElemento" prefHeight="181.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTipoPlato" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="colDescripcionPlato" prefWidth="501.0" text="Descripcion" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <TextField fx:id="txtcodigoTipoPlato" editable="false" layoutX="151.0" layoutY="65.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtDescripcion" editable="false" layoutX="151.0" layoutY="106.0" prefHeight="25.0" prefWidth="236.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="45.0" layoutY="67.0" prefHeight="17.0" prefWidth="77.0" text="CodTipPla">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="45.0" layoutY="108.0" prefHeight="17.0" prefWidth="77.0" text="Descripcion">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Button fx:id="btnNuevo" layoutX="27.0" layoutY="335.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="181.0" layoutY="335.0" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #08CAD3;" text="Editar ">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="349.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #08CAD3;" text="Reporte ">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="502.0" layoutY="335.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

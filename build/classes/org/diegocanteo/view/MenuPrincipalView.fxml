@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="607.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20MenuPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar blendMode="SRC_ATOP" layoutY="-1.0" prefHeight="30.0" prefWidth="204.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas " />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo Plato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgrmador" text="About " />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reporte Empleado" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b396493-e3da-4e06-ba62-3ce88f3144bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call sp_listarEmpleado]]>
+	</queryString>
+	<field name="codigoEmpleado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidoEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccionEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gradoCocinero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoTipoEmpleado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="572" height="79" uuid="74ba0d3d-8e26-4072-93bf-36424fb6feba"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Barra Naranja.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="145" height="79" uuid="4b427766-967f-4f9e-aeb9-adc8fed08f9b"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Icono.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="98" y="32" width="100" height="20" forecolor="#FFFFFF" uuid="4370dc71-cec7-4a30-ae1d-67119cc76068"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tonys Kinal]]></text>
+			</staticText>
+			<image>
+				<reportElement x="511" y="14" width="56" height="50" uuid="a3ec48ac-faf3-48b2-b6d1-2eb47b656810"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\IconoGorro.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="198" y="0" width="167" height="35" uuid="ed83412c-3631-4cb4-bd13-dc87108b8b51"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Empleados]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="41" height="20" uuid="18d91545-f18f-4488-b925-38f01aa7a52c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="0" width="100" height="20" uuid="7dfb319c-6c92-4c5e-a4d6-4111bd630ae6"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="1" width="89" height="20" uuid="4651d519-0c8c-4c5c-b6b7-cab3561728a2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="0" width="72" height="20" uuid="eb3deee7-d2b6-4e20-b3b4-c810da9a6f0f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="1" width="78" height="20" uuid="417560ce-ea54-43cd-9a08-fb1237e47bdb"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="1" width="66" height="20" uuid="9d34062e-6a9e-45fc-b7fa-81461f06c9e2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="1" width="57" height="20" uuid="62ada50d-4638-49f7-82cf-3150cc4bc1dd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Telefono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="0" width="63" height="20" uuid="e90cba84-cebe-468c-8dd8-b1f188b17d4a"/>
+				<text><![CDATA[GradoCocinero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="511" y="1" width="61" height="20" uuid="fa9618cb-4eac-4873-971c-27e7a640001d"/>
+				<text><![CDATA[CodTipEmp]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="21" width="572" height="1" uuid="6f7002b7-5254-489f-adb9-ca6135a6a426"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted" lineColor="#00FFFF"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="41" height="20" uuid="61a4346d-944e-4c1d-9875-0fc51aa651da"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="206" y="0" width="63" height="20" uuid="da0e1247-6a38-40f8-a409-403deb7df8bb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{apellidoEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="78" height="27" uuid="8a9ca744-6d1e-4891-af07-7058f796884b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{numeroEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="365" y="0" width="57" height="20" uuid="0a7f48d9-d836-47ce-8850-e2226f7a4d47"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="0" width="63" height="20" uuid="1dc54f3c-c0e0-47a1-bc78-d4288ace1d0f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{gradoCocinero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="531" y="0" width="23" height="20" uuid="5020c4c3-c0a1-4c2d-8375-45c5d63dc036"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoTipoEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="0" width="64" height="20" uuid="d49a8661-f66f-4a68-b5b5-1449ceccb146"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="0" width="51" height="20" uuid="5e5c7e6d-77dc-4a98-b901-3d094d5c1f1c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{direccionEmpleado}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="38" width="572" height="1" uuid="4b23ab8d-65a8-4aa7-9c09-9a81c61424c7"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted" lineColor="#00FFFF"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
